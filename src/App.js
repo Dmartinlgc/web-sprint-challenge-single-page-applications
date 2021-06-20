@@ -4,10 +4,12 @@ import Form from './Form'
 
 
 
+
 const App = () => {
 
   return (
     <div>
+      <switch>
       <header> 
         <nav>
           <h1>Lambda Eats</h1>
@@ -15,11 +17,11 @@ const App = () => {
         </nav>
          <Route exact path = '/'/>
        </header>
-       <Link to = '/pizza'>order pizza </Link>
-       <Route path = '/pizza' component={Form}/>
+       <Link id = 'order-pizza' to = '/pizza'>order pizza </Link>
+       <Route id ='pizza-form' path = '/pizza' component={Form}/>
       <p> You can remove this code and create your own header</p>
       
-      
+      </switch> 
     </div>
   );
 };

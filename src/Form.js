@@ -16,7 +16,7 @@ function Form(props){
 
  return(
     <div>
-        <Route path = '/pizza'>
+        <Route id ='pizza-form' path = '/pizza'/>
         <Link to = '/'/>
         <h2>build your own pizza </h2>
         <h1>Build Your Own Pizza</h1>
@@ -44,6 +44,7 @@ function Form(props){
             </label>
             <label> Pepperoni
                 <input
+                type ='checkbox'
                 checked = 'checkbox'
                 name = 'Pepperoni'
                 />
@@ -51,6 +52,7 @@ function Form(props){
            
             <label> Sausage
                 <input
+                type ='checkbox'
                 checked = 'checkbox'
                 name = 'Sausage'
                 />
@@ -58,6 +60,7 @@ function Form(props){
            
             <label> Canadian Bacon
                 <input
+                type ='checkbox'
                 checked = 'checkbox'
                 name = 'Canadian Bacon'
                 />
@@ -65,6 +68,7 @@ function Form(props){
            
             <label> Spicy Italian Sausage
                 <input
+                type ='checkbox'
                 checked = 'checkbox'
                 name = 'Spicy Italian Sausage'
                 />
@@ -72,6 +76,7 @@ function Form(props){
            
             <label> Grilled Chicken
                 <input
+                type ='checkbox'
                 checked = 'checkbox'
                 name = 'Grilled Chicken'
                 />
@@ -87,7 +92,7 @@ function Form(props){
                 />
             </label>
             <button id = 'order-button '>Add to Order</button>
-         </Route>   
+            
     </div>
  )
 }
